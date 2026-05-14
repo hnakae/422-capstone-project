@@ -1,0 +1,35 @@
+# Version control
+.git
+.gitignore
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Dependencies (rebuilt inside container)
+node_modules/
+
+# Next.js build artifacts (rebuilt inside container)
+.next/
+out/
+build/
+
+# Environment files (injected at runtime)
+.env
+.env.local
+.env.*.local
+
+# Dev/test artifacts
+coverage/
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docs
+*.md

@@ -1,10 +1,10 @@
 -- DuckSupport seed data (matches lib/seed.ts)
 
 INSERT INTO users (id, name, initials, role, online) VALUES
-  ('00000000-0000-0000-0000-000000000001', 'N. Park',        'NP', 'navigator', TRUE),
-  ('00000000-0000-0000-0000-000000000002', 'M. Singh',       'MS', 'navigator', TRUE),
-  ('00000000-0000-0000-0000-000000000003', 'R. Mendez',      'RM', 'navigator', FALSE),
-  ('00000000-0000-0000-0000-000000000004', 'Dr. K. Whitlow', 'KW', 'manager',   TRUE)
+  ('00000000-0000-0000-0000-000000000001', 'H. Nakae',      'HN', 'manager',   TRUE),
+  ('00000000-0000-0000-0000-000000000002', 'N. Gilliland',  'NG', 'navigator', TRUE),
+  ('00000000-0000-0000-0000-000000000003', 'R. Nystrom',    'RN', 'navigator', FALSE),
+  ('00000000-0000-0000-0000-000000000004', 'H. Ramos',      'HR', 'navigator', TRUE)
 ON CONFLICT DO NOTHING;
 
 INSERT INTO resources (id, name, kind, unit, stock, capacity, threshold, location, trend_delta) VALUES
