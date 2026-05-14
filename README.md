@@ -2,16 +2,35 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### With Docker (full stack)
 
 ```bash
+# First run — build and start Postgres + the app
+docker compose up --build
+
+# Subsequent runs
+docker compose up
+
+# Reset the database (re-runs seed data)
+docker compose down -v && docker compose up
+```
+
+App will be available at [http://localhost:3000](http://localhost:3000).
+
+### Local dev (no Docker)
+
+The app runs entirely off an in-memory seed store without a database — no setup required:
+
+```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+
+To connect a local Postgres instead, copy `.env.local.example` to `.env.local` and set `DATABASE_URL`, then:
+
+```bash
+docker compose up -d db   # Postgres only
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -1,7 +1,7 @@
 -- DuckSupport seed data (matches lib/seed.ts)
 
 INSERT INTO users (id, name, initials, role, online) VALUES
-  ('00000000-0000-0000-0000-000000000001', 'H. Nakae',      'HN', 'manager',   TRUE),
+  ('00000000-0000-0000-0000-000000000001', 'H. Nakae',      'HN', 'manager',   TRUE),  -- lol
   ('00000000-0000-0000-0000-000000000002', 'N. Gilliland',  'NG', 'navigator', TRUE),
   ('00000000-0000-0000-0000-000000000003', 'R. Nystrom',    'RN', 'navigator', FALSE),
   ('00000000-0000-0000-0000-000000000004', 'H. Ramos',      'HR', 'navigator', TRUE)
